@@ -1,0 +1,23 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main() {
+ 
+       unsigned int n1, n2, fat1=1, fat2=1;
+
+    do{
+    cin>>n1>>n2;
+    }while(n1>20 || n2>20);
+
+    for(int i=1; i<=n1; i++){
+        fat1=fat1*i;
+    }
+    for(int j=1; j<=n2; j++){
+        fat2=fat2*j;
+    }
+
+    cout<<fat1+fat2<<endl;
+ 
+    return 0;
+}
